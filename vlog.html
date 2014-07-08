@@ -76,6 +76,15 @@ License: Custom
 </header>
 <!-- END HEADER -->
 
+<!-- BEGIN FACEBOOK -->
+<div id="facebook">
+	<div class="facebook-body">
+		<div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+	</div>
+	<a href="#" class="facebook-button"></a>
+</div>
+<!-- END FACEBOOK -->
+
 <div class="space-80"></div>
 
 <!-- BEGIN NAJNOWSZE VIDEO -->
@@ -135,20 +144,32 @@ License: Custom
 <script src="assets/plugins/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.js" type="text/javascript"></script>
 <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="assets/plugins/bootstrap-jasny/js/jasny-bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/plugins/fancybox/source/jquery.fancybox.js" type="text/javascript"></script>
 
-
-<!-- BEGIN bxslider -->
-<script type="text/javascript" src="assets/plugins/bxslider/jquery.bxslider.js"></script>
 <script type="text/javascript">
 	(function($) { "use strict";
-
-		$('.bxslider').bxSlider();
+		
+		jQuery("#facebook").hover(
+			function () {
+				jQuery("#facebook").animate({left: "0px"}, 'slow');
+			},
+			function () {
+				jQuery("#facebook").stop(true,false).animate({ left: "-306px" }, 'slow')
+		});
 
 	})(jQuery);
 </script>
-<!-- END bxslider -->
 
+
+<!-- BEGIN SCRIP FACEBOOK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&appId=240342582669068&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- END SCRIP FACEBOOK -->
 
 <!-- END JAVASCRIPTS -->
 </body>
