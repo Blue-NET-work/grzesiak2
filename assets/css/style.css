@@ -25,9 +25,10 @@ License: Custom
 	5.1 Slider base
 	5.2 Slider item
 	5.3 Slider bx-wrapper pagginacja
-6. Video
-7. Dream Body
-8. Footer
+6. Movie
+7. Video
+8. Dream Body
+9. Footer
 
 9. Responsive
 
@@ -69,6 +70,14 @@ body {
 .m-t-45 {margin-top:45px;}
 .m-t-50 {margin-top:50px;}
 .m-t-55 {margin-top:55px;}
+.m-t-60 {margin-top:60px;}
+.m-t-65 {margin-top:65px;}
+.m-t-70 {margin-top:70px;}
+.m-t-75 {margin-top:75px;}
+.m-t-80 {margin-top:80px;}
+.m-t-85 {margin-top:85px;}
+.m-t-90 {margin-top:90px;}
+.m-t-95 {margin-top:95px;}
 .m-t-100 {margin-top:100px;}
 
 /* margin bottom */
@@ -337,7 +346,33 @@ header.navbar-default {
 
 
 /*------------------------------------------------------------------
-	[6. Video box]
+	[6. movie box]
+------------------------------------------------------------------*/
+
+#movie{
+	background:#e7e7e7;
+	font-size:14px;
+	color:#595959;
+	padding:80px 0 40px;
+}
+
+	#movie h2{
+		text-transform:uppercase;
+		font-size:36px;
+		color:#000000;
+		margin-bottom:15px;
+	}
+	
+	#movie .info p{
+		margin-bottom:5px;
+		}	
+		#movie .info p strong{
+			color:#000;
+		}
+
+
+/*------------------------------------------------------------------
+	[7. Video box]
 ------------------------------------------------------------------*/
 
 #video{
@@ -387,7 +422,7 @@ header.navbar-default {
 
 
 /*------------------------------------------------------------------
-	[7. Dream Body]
+	[8. Dream Body]
 ------------------------------------------------------------------*/
 
 #dreamBody{
@@ -447,7 +482,9 @@ header.navbar-default {
 		color:#fff;
 		text-align:center;
 		padding:15px;
-		margin-top:15px;
+		margin-top:20px;
+		margin-left:auto;
+		margin-right:auto;
 	}
 
 	
@@ -462,8 +499,8 @@ header.navbar-default {
 		min-height:510px;
 	}
 	#dreamBody.gold .info{
-		width:35%;
-		margin-left:25%;
+		width:40%;
+		margin-left:15%;
 		color:#4f4d44;
 	}
 	#dreamBody.gold .message{
@@ -471,9 +508,25 @@ header.navbar-default {
 		margin-right:30px;
 	}
 	#dreamBody.gold  .buttonMore{
-		width:90%;
-		margin-left:auto;
-		margin-right:auto;
+		width:60%;
+	}
+	
+/* silver section */
+	#dreamBody.silver{
+		min-height:510px;
+		margin-top:150px;
+	}
+	#dreamBody.silver .info{
+		width:40%;
+		margin-left:15%;
+		color:#fff;
+	}
+	#dreamBody.silver .sound{
+		float:left;
+		margin-right:30px;
+	}
+	#dreamBody.silver  .buttonMore{
+		width:60%;
 	}
 
 
@@ -494,8 +547,6 @@ header.navbar-default {
 	}
 	#dreamBody.green .buttonMore{
 		width:60%;
-		margin-left:auto;
-		margin-right:auto;
 	}
 	
 /* mateusz */
@@ -526,6 +577,15 @@ header.navbar-default {
 	right: 10%;
 	top:-100px;
 }
+
+.mateusz4{
+	background:url(../img/mateusz/mateusz4.png) no-repeat top center;
+	width:405px;
+	height:630px;
+	position: absolute;
+	right: 10%;
+	top:-170px;
+}
 	
 	
 /* Background */
@@ -555,8 +615,21 @@ header.navbar-default {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f8471', endColorstr='#75cbbd',GradientType=1 ); /* IE6-8 */
 }
 
+#dreamBody.silver{
+	background: rgb(121,122,123); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc5N2E3YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5Y2E0YWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  rgba(121,122,123,1) 0%, rgba(156,164,173,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(121,122,123,1)), color-stop(100%,rgba(156,164,173,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(121,122,123,1) 0%,rgba(156,164,173,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(121,122,123,1) 0%,rgba(156,164,173,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(121,122,123,1) 0%,rgba(156,164,173,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(121,122,123,1) 0%,rgba(156,164,173,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#797a7b', endColorstr='#9ca4ad',GradientType=1 ); /* IE6-8 */
+}
+
 /*------------------------------------------------------------------
-	[8. Footer]
+	[9. Footer]
 ------------------------------------------------------------------*/
 footer{
 	position:relative;
