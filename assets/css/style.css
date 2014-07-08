@@ -13,11 +13,21 @@ License: Custom
 
 1. Body
 2. Helper Class
+	2.1 Margin
+	2.2 Padding
+	2.3 space
+	2.4 Pace space
 3. Header
-4. Slider
-5. Video
-6. Dream Body
-7. Footer
+	3.1 Header Bar
+	3.2 Header NavMenu
+4. Facebook
+5. Slider
+	5.1 Slider base
+	5.2 Slider item
+	5.3 Slider bx-wrapper pagginacja
+6. Video
+7. Dream Body
+8. Footer
 
 9. Responsive
 
@@ -38,9 +48,13 @@ body {
 	font-smooth: always;
 }
 
+
 /*------------------------------------------------------------------
 	[2. Helper Class]
 ------------------------------------------------------------------*/
+
+/* 2.1 Margin
+********************************/
 
 /* margin top */
 .m-t-0 {margin-top:0px;}
@@ -74,7 +88,9 @@ body {
 .m-b-80 {margin-bottom:80px;}
 .m-b-85 {margin-bottom:85px;}
 
-/* padding */
+
+/* 2.2 padding
+********************************/
 .padding-5 {padding:5px;}
 .padding-10 {padding:10px;}
 .padding-15 {padding:15px;}
@@ -84,13 +100,16 @@ body {
 .padding-35 {padding:35px;}
 .padding-40 {padding:40px;}
 
-/* space */
+
+/* 2.3 space
+********************************/
 .space-60 {height:60px;}
 .space-80 {height:80px;}
 .space-100 {height:100px;}
 
 
-/* Pace style */
+/* 2.4 Pace style 
+********************************/
 .pace .pace-progress {
   background: #ecede8;
 }
@@ -103,6 +122,7 @@ body {
   border-top-color: #ecede8;
   border-left-color: #ecede8;
 }
+
 
 /*------------------------------------------------------------------
 	[3. Header]
@@ -191,70 +211,119 @@ header.navbar-default {
 
 
 /*------------------------------------------------------------------
-	[4. Slider]
+	[4. Facebook]
+------------------------------------------------------------------*/
+#facebook{
+	position:fixed;
+	top:25%;
+	left:-306px;
+}
+
+
+/* 4.1 Facebook body */
+	#facebook .facebook-body{
+		border:3px solid #365493;
+		display:inline-block;
+		width:306px;
+		min-height:260px;
+		padding:5px 0;
+	}
+
+
+/* 4.2 Facebook button */
+	#facebook .facebook-button{
+		background:url(../img/facebook.png) no-repeat;
+		display:inline-block;
+		position:absolute;
+		border: none;
+		width:47px;
+		height:141px;
+		top:0px;
+		right:-47px;
+	}
+	#facebook .facebook-button:focus{
+		outline:none;
+	}
+
+
+/*------------------------------------------------------------------
+	[5. Slider]
 ------------------------------------------------------------------*/
 #slider{
 	position:relative;
 	z-index:10;
 }
 
-#slider .bxslider li{
-	position:relative;
-}
+/* 5.1 Slider base */
 
-#slider .foto img{
-	width:100%;
-}
+	#slider .bx-wrapper .bx-viewport {
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		border: none;
+		left: 0px;
+		/* background: #fff; */
+		-webkit-transform: translatez(0);
+		-moz-transform: translatez(0);
+		-ms-transform: translatez(0);
+		-o-transform: translatez(0);
+		transform: translatez(0);
+	}
+	
+	#slider .bxslider li{
+		position:relative;
+	}
 
-#slider .info{
-	background:rgba(255,255,255,.7);
-	position:absolute;
-	width:100%;
-	height:40%;
-	bottom:0;
-	color:#595959;
-	font-size:14px;
-}
+/* 5.2 Slider item */
+	
+	#slider .foto img{
+		width:100%;
+	}
+	
+	#slider .info{
+		background:rgba(255,255,255,.7);
+		position:absolute;
+		width:100%;
+		height:40%;
+		bottom:0;
+		color:#595959;
+		font-size:14px;
+	}
+	
+	#slider .info h4{
+		color:#000000;
+		font-size:34px;
+		text-transform:uppercase;
+	}
+	
+	#slider .buttonBuy{
+		-webkit-box-shadow: 4px 4px 10px -2px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow:    4px 4px 10px -2px rgba(50, 50, 50, 0.75);
+		box-shadow:         4px 4px 10px -2px rgba(50, 50, 50, 0.75);
+	}
+	
 
-#slider .info h4{
-	color:#000000;
-	font-size:34px;
-	text-transform:uppercase;
-}
+/* 5.3 Slider bx-wrapper pagginacja */
 
-#slider .bx-wrapper .bx-viewport {
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	border: none;
-	left: 0px;
-	/* background: #fff; */
-	-webkit-transform: translatez(0);
-	-moz-transform: translatez(0);
-	-ms-transform: translatez(0);
-	-o-transform: translatez(0);
-	transform: translatez(0);
-}
-
-#slider .bx-wrapper .bx-pager, 
-#slider .bx-wrapper .bx-controls-auto{
-	bottom:10px;
-}
-
-#slider .bx-wrapper .bx-pager.bx-default-pager a{
-	background:url(../img/pin.png) no-repeat left center;
-	width:20px;
-	height:19px;
-}
-
-#slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
-#slider  .bx-wrapper .bx-pager.bx-default-pager a.active{
-	background-position:right center;
-}
+	#slider .bx-wrapper .bx-pager, 
+	#slider .bx-wrapper .bx-controls-auto{
+		bottom:10px;
+	}
+	
+	#slider .bx-wrapper .bx-pager.bx-default-pager a{
+		background:url(../img/pin.png) no-repeat left center;
+		width:20px;
+		height:19px;
+	}
+	
+	#slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
+	#slider  .bx-wrapper .bx-pager.bx-default-pager a.active{
+		background-position:right center;
+	}
 
 
 /*------------------------------------------------------------------
-	[5. Video box]
+	[6. Video box]
 ------------------------------------------------------------------*/
 
 #video{
@@ -290,7 +359,7 @@ header.navbar-default {
 
 
 /*------------------------------------------------------------------
-	[6. Dream Body]
+	[7. Dream Body]
 ------------------------------------------------------------------*/
 
 #dramBody{
@@ -332,7 +401,7 @@ header.navbar-default {
 
 
 /*------------------------------------------------------------------
-	[7. Footer]
+	[8. Footer]
 ------------------------------------------------------------------*/
 footer{
 	position:relative;
