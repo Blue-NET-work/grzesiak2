@@ -225,6 +225,7 @@ header.navbar-default {
 	#facebook .facebook-body{
 		border:3px solid #365493;
 		display:inline-block;
+		background:#fff;
 		width:306px;
 		min-height:260px;
 		padding:5px 0;
