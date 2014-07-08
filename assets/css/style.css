@@ -215,8 +215,9 @@ header.navbar-default {
 ------------------------------------------------------------------*/
 #facebook{
 	position:fixed;
-	top:25%;
+	top:20%;
 	left:-306px;
+	z-index:15;
 }
 
 
