@@ -292,10 +292,18 @@ header.navbar-default {
 		font-size:14px;
 	}
 	
+	#slider .infoBody{
+		padding:20px 40px;
+	}
+	
 	#slider .info h4{
 		color:#000000;
 		font-size:34px;
 		text-transform:uppercase;
+	}
+	
+	#slider .buttonWatch img{
+		margin:-120px auto 0;
 	}
 	
 	#slider .buttonBuy{
@@ -409,15 +417,6 @@ header.navbar-default {
 	top: 0px;
 }
 
-.mateusz1{
-	background:url(../img/mateusz/mateusz1.png) no-repeat top center;
-	width:478px;
-	height:488px;
-	position: absolute;
-	right: 10%;
-	top:-100px;
-}
-
 #dreamBody .info{
 	position:relative;
 	width:20%;
@@ -450,11 +449,84 @@ header.navbar-default {
 		padding:15px;
 		margin-top:15px;
 	}
+
 	
 	#dreamBody .dream{
 		float:left;
 		margin-left:-120px;
 	}
+
+
+/* gold section */
+	#dreamBody.gold {
+		min-height:510px;
+	}
+	#dreamBody.gold .info{
+		width:35%;
+		margin-left:25%;
+		color:#4f4d44;
+	}
+	#dreamBody.gold .message{
+		float:left;
+		margin-right:30px;
+	}
+	#dreamBody.gold  .buttonMore{
+		width:90%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+
+/* green section */
+	#dreamBody.green {
+		min-height:510px;
+	}
+	#dreamBody.green .info{
+		width:40%;
+		margin-left:15%;
+		margin-top:8%;
+		color:#f2f5f4;
+	}
+	#dreamBody.green .one{
+		float:left;
+		margin-right:30px;
+		margin-bottom:10px;
+	}
+	#dreamBody.green .buttonMore{
+		width:60%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+/* mateusz */
+
+.mateusz1{
+	background:url(../img/mateusz/mateusz1.png) no-repeat top center;
+	width:478px;
+	height:488px;
+	position: absolute;
+	right: 10%;
+	top:-100px;
+}
+
+.mateusz2{
+	background:url(../img/mateusz/mateusz2.png) no-repeat top center;
+	width:611px;
+	height:684px;
+	position: absolute;
+	right: 10%;
+	top:-100px;
+}
+
+.mateusz3{
+	background:url(../img/mateusz/mateusz3.png) no-repeat top center;
+	width:611px;
+	height:684px;
+	position: absolute;
+	right: 10%;
+	top:-100px;
+}
+	
 	
 /* Background */
 #dreamBody.gold{
@@ -470,6 +542,18 @@ header.navbar-default {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5c17f', endColorstr='#e0d8bc',GradientType=1 ); /* IE6-8 */	
 }
 
+#dreamBody.green{
+	background: rgb(79,132,113); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRmODQ3MSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3NWNiYmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(left,  rgba(79,132,113,1) 0%, rgba(117,203,189,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(79,132,113,1)), color-stop(100%,rgba(117,203,189,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(79,132,113,1) 0%,rgba(117,203,189,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(79,132,113,1) 0%,rgba(117,203,189,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(79,132,113,1) 0%,rgba(117,203,189,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(79,132,113,1) 0%,rgba(117,203,189,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f8471', endColorstr='#75cbbd',GradientType=1 ); /* IE6-8 */
+}
 
 /*------------------------------------------------------------------
 	[8. Footer]
