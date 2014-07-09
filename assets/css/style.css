@@ -54,6 +54,8 @@ body {
 	[2. Helper Class]
 ------------------------------------------------------------------*/
 
+a:hover, a:link, a:focus { outline: none} 
+
 /* 2.1 Margin
 ********************************/
 
@@ -155,7 +157,6 @@ div.buttonBuyDiv{
 		-webkit-box-shadow: 4px 4px 10px -2px rgba(50, 50, 50, 0.75);
 		-moz-box-shadow:    4px 4px 10px -2px rgba(50, 50, 50, 0.75);
 		box-shadow:         4px 4px 10px -2px rgba(50, 50, 50, 0.75);
-		text-decoration:none;
 		display:block;
 		width:246px;
 		min-height:99px;
@@ -164,6 +165,10 @@ div.buttonBuyDiv{
 		padding:8px 10px;
 		margin-left:auto;
 		margin-right:auto;
+	}
+	.buttonBuy:hover{
+		color:#fff;
+		text-decoration:underline;
 	}
 		.buttonBuy .iconOk{
 			background:url(../img/iconOk.png) no-repeat;
@@ -179,6 +184,11 @@ div.buttonBuyDiv{
 		.buttonBuy .details .price{
 			display:block;
 			font-size:30px;
+		}
+		
+		.buttonBuy:hover .details,
+		.buttonBuy:hover .details .price{
+			text-decoration:underline;
 		}
 
 /*------------------------------------------------------------------
@@ -270,11 +280,19 @@ header.navbar-default {
 /*------------------------------------------------------------------
 	[4. Facebook]
 ------------------------------------------------------------------*/
+
+
 #facebook{
 	position:fixed;
 	top:20%;
 	left:-306px;
 	z-index:15;
+	margin-left:0px;
+	transition:all 0.5;
+}
+
+.canvas-slid #facebook{
+	margin-left:-50px;
 }
 
 
@@ -380,11 +398,14 @@ header.navbar-default {
 	}
 	
 	#slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
-	#slider  .bx-wrapper .bx-pager.bx-default-pager a.active{
+	#slider .bx-wrapper .bx-pager.bx-default-pager a.active{
 		background-position:right center;
 		border-color:rgba(0,0,0,0.4);
 		background: #fff;
 	}
+	
+	#slider .bx-wrapper .bx-prev{left:90px;}
+	#slider .bx-wrapper .bx-next{right:90px;}
 
 
 /*------------------------------------------------------------------
@@ -395,11 +416,24 @@ header.navbar-default {
 	background:#e7e7e7;
 	font-size:14px;
 	color:#595959;
-	padding:80px 0 40px;
+	padding:0 0 50px;
 }
 
-	#movie .movie{
+	#movie .movie,
+	#movie .movie .container{
 		position:relative;
+	}
+	
+	#movie .movie .play{
+		background:url(../img/play.png) no-repeat;
+		position:absolute;
+		display:block;
+		width:188px;
+		height:188px;
+		top:50%;
+		left:50%;
+		margin-top:-94px;
+		margin-left:-94px;
 	}
 
 	#movie h2{
